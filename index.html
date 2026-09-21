@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🩵 Darys 🩵</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.png">
+</head>
+<body class="min-h-screen text-white flex flex-col justify-between items-center relative select-none p-4 md:p-8">
+
+  <!-- Fondo de destellos y estrellas -->
+  <div id="sparkles-container" class="fixed inset-0 pointer-events-none z-0 overflow-hidden"></div>
+
+  <!-- Encabezado / Título -->
+  <header class="z-10 text-center mt-2 md:mt-4 mb-2">
+    <h1 class="glow-title text-4xl sm:text-6xl font-bold tracking-wide text-yellow-300 drop-shadow-lg flex items-center justify-center gap-3">
+      Flores Para Ti <span class="text-3xl sm:text-5xl animate-bounce">🌻</span>
+    </h1>
+    <p class="text-purple-200/80 text-xs sm:text-sm mt-1 font-light tracking-widest uppercase">
+      FELIZ 21 DE SEPTIEMBRE MI AMOR 
+    </p>
+  </header>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <main class="z-10 flex-1 flex flex-col items-center justify-center w-full max-w-xl my-2 relative">
+    <div class="relative w-full aspect-[4/5] max-w-[420px] sway-bouquet filter drop-shadow-[0_15px_30px_rgba(0,0,0,0.8)]">
+      <svg class="w-full h-full overflow-visible" viewBox="0 0 500 580" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="centerBlur" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="1.8" />
+          </filter>
+
+          <filter id="softPetalBlur" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="0.8" />
+          </filter>
+
+          <linearGradient id="petalGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#fff066" />
+            <stop offset="60%" stop-color="#ffcc00" />
+            <stop offset="100%" stop-color="#e69900" />
+          </linearGradient>
+
+          <linearGradient id="petalGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#ffd633" />
+            <stop offset="100%" stop-color="#cc7a00" />
+          </linearGradient>
+
+          <radialGradient id="centerGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#542b00" />
+            <stop offset="50%" stop-color="#3a1b00" />
+            <stop offset="85%" stop-color="#1f0e00" />
+            <stop offset="100%" stop-color="#0d0500" />
+          </radialGradient>
+
+          <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#22d3ee" />
+            <stop offset="50%" stop-color="#06b6d4" />
+            <stop offset="100%" stop-color="#0891b2" />
+          </linearGradient>
+
+          <g id="leafElem">
+            <path d="M 0,0 C -25,-10 -55,0 -70,18 C -40,22 -15,12 0,0 Z" fill="#2d6a4f" stroke="#1b4332" stroke-width="1" />
+          </g>
+
+          <g id="sunflowerHead">
+            <g>
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(0)" />
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(16.36)" />
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(32.72)" />
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(49.08)" />
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(65.45)" />
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(81.81)" />
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(98.18)" />
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(114.54)" />
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(130.90)" />
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(147.27)" />
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(163.63)" />
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(180)" />
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(196.36)" />
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(212.72)" />
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(229.08)" />
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(245.45)" />
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(261.81)" />
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(278.18)" />
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(294.54)" />
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(310.90)" />
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(327.27)" />
+              <path d="M0,-5 C-6,-22 -7,-45 0,-58 C7,-45 6,-22 0,-5 Z" fill="url(#petalGrad2)" transform="rotate(343.63)" />
+            </g>
+
+            <g>
+              <path d="M0,-5 C-5,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(8.18)" />
+              <path d="M0,-5 C-5,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(24.54)" />
+              <path d="M0,-5 C-5,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(40.90)" />
+              <path d="M0,-5 C-5,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(57.27)" />
+              <path d="M0,-5 C-5,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(73.63)" />
+              <path d="M0,-5 C-5,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(90)" />
+              <path d="M0,-5 C-5,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(106.36)" />
+              <path d="M0,-5 C-5,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(122.72)" />
+              <path d="M0,-5 C-5,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(139.08)" />
+              <path d="M0,-5 C-5,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(155.45)" />
+              <path d="M0,-5 C-5,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(171.81)" />
+              <path d="M0,-5 C-5,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(188.18)" />
+              <path d="M0,-5 C-5,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(204.54)" />
+              <path d="M0,-5 C-5,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(220.90)" />
+              <path d="M0,-5 C-5,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(237.27)" />
+              <path d="M0,-5 C-5,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(253.63)" />
+              <path d="M0,-5 C-5,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(270)" />
+              <path d="M0,-5 C-5,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(286.36)" />
+              <path d="M0,-5 C-5,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(302.72)" />
+              <path d="M0,-5 C-5,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(319.08)" />
+              <path d="M0,-5 C-6,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(335.45)" />
+              <path d="M0,-5 C-5,-20 -6,-40 0,-52 C6,-40 5,-20 0,-5 Z" fill="url(#petalGrad1)" transform="rotate(351.81)" />
+            </g>
+
+            <circle cx="0" cy="0" r="23" fill="#663300" opacity="0.45" filter="url(#softPetalBlur)" />
+            <circle cx="0" cy="0" r="21" fill="url(#centerGrad)" stroke="#1a0d00" stroke-width="1.2" filter="url(#centerBlur)" />
+            <circle cx="0" cy="0" r="15" fill="none" stroke="#ffcc00" stroke-width="0.8" stroke-dasharray="2 2" opacity="0.5" />
+          </g>
+        </defs>
+
+        <!-- TALLOS -->
+        <g stroke="#1e4d3b" stroke-linecap="round" fill="none">
+          <line x1="250" y1="250" x2="250" y2="480" stroke-width="7" />
+          <line x1="210" y1="200" x2="248" y2="480" stroke-width="6.5" />
+          <line x1="290" y1="200" x2="252" y2="480" stroke-width="6.5" />
+          <line x1="170" y1="270" x2="246" y2="480" stroke-width="6" />
+          <line x1="330" y1="270" x2="254" y2="480" stroke-width="6" />
+          <line x1="210" y1="340" x2="249" y2="480" stroke-width="6" />
+          <line x1="290" y1="340" x2="251" y2="480" stroke-width="6" />
+        </g>
+
+        <!-- HOJAS -->
+        <use href="#leafElem" x="210" y="390" transform="rotate(-35, 210, 390)" />
+        <use href="#leafElem" x="290" y="390" transform="scale(-1, 1) translate(-580, 0) rotate(-35, 290, 390)" />
+        <use href="#leafElem" x="170" y="420" transform="rotate(-15, 170, 420)" />
+        <use href="#leafElem" x="330" y="420" transform="scale(-1, 1) translate(-660, 0) rotate(-15, 330, 420)" />
+
+        <!-- 8 GIRASOLES -->
+        <g class="interactive-flower" style="--tx: 250px; --ty: 140px; transform: translate(250px, 140px);"><use href="#sunflowerHead" x="0" y="0" /></g>
+        <g class="interactive-flower" style="--tx: 195px; --ty: 200px; transform: translate(195px, 200px);"><use href="#sunflowerHead" x="0" y="0" /></g>
+        <g class="interactive-flower" style="--tx: 305px; --ty: 200px; transform: translate(305px, 200px);"><use href="#sunflowerHead" x="0" y="0" /></g>
+        <g class="interactive-flower" style="--tx: 145px; --ty: 275px; transform: translate(145px, 275px);"><use href="#sunflowerHead" x="0" y="0" /></g>
+        <g class="interactive-flower" style="--tx: 250px; --ty: 265px; transform: translate(250px, 265px);"><use href="#sunflowerHead" x="0" y="0" /></g>
+        <g class="interactive-flower" style="--tx: 355px; --ty: 275px; transform: translate(355px, 275px);"><use href="#sunflowerHead" x="0" y="0" /></g>
+        <g class="interactive-flower" style="--tx: 195px; --ty: 350px; transform: translate(195px, 350px);"><use href="#sunflowerHead" x="0" y="0" /></g>
+        <g class="interactive-flower" style="--tx: 305px; --ty: 350px; transform: translate(305px, 350px);"><use href="#sunflowerHead" x="0" y="0" /></g>
+
+        <!-- LAZO -->
+        <g transform="translate(250, 465)" class="filter drop-shadow-md">
+          <ellipse cx="0" cy="0" rx="8" ry="7" fill="url(#cyanGrad)" stroke="#0891b2" stroke-width="1.2" />
+          <path d="M 0,0 C -15,-20 -40,-18 -45,-5 C -48,8 -25,12 0,0 Z" fill="url(#cyanGrad)" stroke="#0891b2" stroke-width="1.2" />
+          <path d="M -5,-2 C -18,-12 -32,-10 -38,0" fill="none" stroke="#a5f3fc" stroke-width="1" opacity="0.8" />
+          <path d="M 0,0 C 15,-20 40,-18 45,-5 C 48,8 25,12 0,0 Z" fill="url(#cyanGrad)" stroke="#0891b2" stroke-width="1.2" />
+          <path d="M 5,-2 C 18,-12 32,-10 38,0" fill="none" stroke="#a5f3fc" stroke-width="1" opacity="0.8" />
+          <path d="M -3,4 C -12,18 -22,32 -30,42 C -24,40 -15,35 -5,22 Z" fill="url(#cyanGrad)" stroke="#0891b2" stroke-width="1" />
+          <path d="M 3,4 C 12,18 22,32 30,42 C 24,40 15,35 5,22 Z" fill="url(#cyanGrad)" stroke="#0891b2" stroke-width="1" />
+        </g>
+      </svg>
+    </div>
+  </main>
+
+  <!-- REPRODUCTOR DE MÚSICA CON PLAYLIST -->
+  <footer class="z-20 w-full max-w-md mt-2 mb-4">
+    <div class="bg-purple-950/70 backdrop-blur-md border border-purple-500/30 rounded-2xl p-4 sm:p-5 shadow-2xl flex flex-col gap-3">
+      
+      <!-- Información de Canción -->
+      <div class="flex items-center justify-between gap-3">
+        <div class="flex items-center gap-3 overflow-hidden">
+          <div id="album-art" class="w-12 h-12 rounded-xl bg-gradient-to-tr from-amber-400 via-yellow-300 to-teal-400 flex items-center justify-center text-xl shadow-lg shrink-0 transition-transform duration-500">
+            🎵
+          </div>
+          <div class="truncate">
+            <h2 id="song-title" class="text-sm sm:text-base font-semibold text-yellow-100 truncate">Risk It All</h2>
+            <p id="song-artist" class="text-xs text-purple-300/80 truncate">Bruno Mars</p>
+          </div>
+        </div>
+
+        <span id="playlist-index" class="text-xs font-mono bg-purple-900/60 text-yellow-300 px-2 py-1 rounded-md border border-purple-400/20">
+          1/9
+        </span>
+      </div>
+
+      <!-- Barra de Progreso -->
+      <div class="flex flex-col gap-1 mt-1">
+        <input id="seek-slider" type="range" min="0" max="100" value="0" class="w-full cursor-pointer">
+        <div class="flex justify-between text-[11px] text-purple-300/70 font-mono">
+          <span id="current-time">0:00</span>
+          <span id="total-duration">0:00</span>
+        </div>
+      </div>
+
+      <!-- Controles del Reproductor -->
+      <div class="flex items-center justify-between px-2 pt-1">
+        <button id="like-btn" class="text-purple-300 hover:text-pink-400 transition-colors text-lg">
+          ♥
+        </button>
+
+        <div class="flex items-center gap-4">
+          <button id="prev-btn" class="text-purple-200 hover:text-yellow-300 transition-colors text-xl">
+            ⏮
+          </button>
+          
+          <button id="play-btn" class="w-12 h-12 rounded-full bg-yellow-400 hover:bg-yellow-300 text-purple-950 font-bold flex items-center justify-center text-xl shadow-lg shadow-yellow-500/30 transition-all transform active:scale-95">
+            ▶
+          </button>
+
+          <button id="next-btn" class="text-purple-200 hover:text-yellow-300 transition-colors text-xl">
+            ⏭
+          </button>
+        </div>
+
+        <button id="loop-btn" class="text-purple-300/60 hover:text-yellow-300 transition-colors text-sm" title="Repetición">
+          🔁
+        </button>
+
+        
+      </div>
+    </div>
+  </footer>
+
+  <audio id="native-audio" class="hidden"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

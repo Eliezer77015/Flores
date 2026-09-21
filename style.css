@@ -1,0 +1,109 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  background: radial-gradient(circle at center, #1b0833 0%, #0d031a 70%, #05010a 100%);
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+  20% { opacity: 0.8; }
+  80% { opacity: 0.8; }
+  100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+}
+
+@keyframes softSway {
+  0%, 100% { transform: rotate(-1.2deg); }
+  50% { transform: rotate(1.2deg); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { text-shadow: 0 0 10px rgba(253, 224, 71, 0.7), 0 0 20px rgba(253, 224, 71, 0.4); }
+  50% { text-shadow: 0 0 20px rgba(253, 224, 71, 1), 0 0 35px rgba(251, 191, 36, 0.8); }
+}
+
+.twinkle-star {
+  animation: twinkle var(--duration, 3s) infinite ease-in-out var(--delay, 0s);
+}
+
+.floating-sparkle {
+  position: absolute;
+  pointer-events: none;
+  animation: floatUp var(--duration, 12s) infinite linear var(--delay, 0s);
+}
+
+.sway-bouquet {
+  transform-origin: bottom center;
+  animation: softSway 5s ease-in-out infinite;
+}
+
+.glow-title {
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
+.interactive-flower {
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.35s ease;
+  cursor: pointer;
+}
+
+.interactive-flower:hover {
+  transform: translate(var(--tx, 0px), calc(var(--ty, 0px) - 16px)) scale(1.12) !important;
+  filter: drop-shadow(0 10px 18px rgba(253, 224, 71, 0.6));
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  height: 6px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #facc15;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(250, 204, 21, 0.8);
+  transition: transform 0.1s ease;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* IMÁGENES PIXEL ART FLOTANTES */
+@keyframes pixelFloatFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.7) rotate(-6deg);
+  }
+  20% {
+    opacity: 0.85;
+    transform: translateY(-20px) scale(1) rotate(4deg);
+  }
+  80% {
+    opacity: 0.85;
+    transform: translateY(-80px) scale(1.05) rotate(-4deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-130px) scale(0.8) rotate(6deg);
+  }
+}
+
+.pixel-art-float {
+  position: absolute;
+  pointer-events: none;
+  z-index: 1;
+  animation: pixelFloatFade 12s ease-in-out forwards;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  filter: drop-shadow(0 0 12px rgba(34, 211, 238, 0.4));
+}
+
